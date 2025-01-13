@@ -5,9 +5,15 @@
 # Общее количество символов (включая пробелы).
 # Выведите полученную статистику на экран.
 
-with open('task1.txt', encoding='utf-8') as f:
-    c = 0
-    for i in range(len(f.read()) - 2):
-        if f.read()[i - 1] == "\n":
-            c+=1
-    print(c)
+with (open('task1.txt') as f):
+    s = f.readlines()
+    n = f.read()
+
+    # ls = n.split(' ')
+    # print("cлов:", len(ls)-1)
+    # print("строк:", len(s))
+    # print("символы:", len(s[0]) + len(s[1]) + len(s[2]))
+    print(s)
+
+a=n.split("\n")
+print(a)
