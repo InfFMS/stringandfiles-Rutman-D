@@ -5,6 +5,7 @@
 # Общее количество символов (включая пробелы).
 # Выведите полученную статистику на экран.
 
+
 l = sum(1 for line in open("task1.txt"))
 print(l)
 
@@ -18,3 +19,4 @@ for i in open("task1.txt"):
 
 print(n-2)
 print(k)
+
