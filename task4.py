@@ -4,13 +4,14 @@
 # Между словами вместо пробела ставится символ "_".
 # После записи откройте этот файл, считайте содержимое и выведите его на экран.
 s = ''
-r = ""
+number_str = 3
 
-for i in range(5):
+for i in range(number_str):
     n = input().upper()
     n = n.replace(" ", "_")
-    s += n + " "
+    s += n + "\n"
 
+#print(s)
 s = s[:-1]
 with open('task4.txt', 'w', encoding='utf8') as f:
     f.write(s)

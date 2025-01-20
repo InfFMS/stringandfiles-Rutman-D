@@ -9,14 +9,14 @@
 l = sum(1 for line in open("task1.txt"))
 print(l)
 
-n = 0
-k = 0
+w = 0
+s = 0
 
-for i in open("task1.txt"):
+for i in open("task1.txt", encoding='utf-8'):
+    #print("i =", i)
+    w += len(i.split())
+    s += len(i)
 
-    n += len(i.split())
-    k += len(i.replace(' ', ''))
-
-print(n-2)
-print(k)
+print(w-1)
+print(s)
 
